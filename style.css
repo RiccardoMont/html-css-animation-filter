@@ -1,0 +1,415 @@
+.transition-all-2s-easeinout-0s{
+    transition: all 2s ease-in-out 0s;
+}
+
+/* Transizione standard*/
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+/* Fine esercizio 1 */
+
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform-origin: left;
+}
+
+.ex-2-square:active {
+    transform: scale(11,1);
+}
+/* Fine esercizio 2*/
+
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.ex-3-square:hover{
+    border-radius: 100px;
+}
+/* Fine esercizio 3*/
+
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.ex-4-square:hover{
+    opacity:0;
+}
+
+/* Fine esercizio 4*/
+
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+
+.ex-5-square:hover{
+    transform: scale(2,2);
+}
+
+.ex-5-square:active{
+    transform: scale(0.5,0.5);
+}
+
+/* Fine esercizio 5*/
+
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+/*Fine esercizio 6*/
+
+.ex-7-img:hover{
+    filter:brightness(2) blur(10px);
+}
+/*Fine esercizio 7*/
+
+.ex-8-img:hover{
+    filter:sepia(1) drop-shadow(20px 20px 5px #4a4a4a);
+    border-radius: 5rem;
+}
+/*Fine esercizio 8*/
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+    transform-origin: left;
+}
+
+.ex-9-img:hover {
+    filter: hue-rotate(45deg) saturate(3);
+    border-radius: 5rem;
+    transform: scaleX(2) scaleY(1.5);
+}
+/*Fine esercizio 9*/
+
+.ex-10-icon {
+    font-size: 60px;
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*Fine Esercizio 10*/
+
+.ex-11-icon {
+    font-size: 60px;
+    
+}
+
+.ex-11-icon:hover{
+    animation-name: avanti-indietro;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes avanti-indietro {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }   
+    50%{
+        transform: rotate(180deg);
+    } 
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/*Fine esercizio 11*/
+
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -20px;
+    /*top: -10px; Modificato per esercizio 13*/
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -20px;
+    /*bottom: -10px; Modificato per esercizio 13*/
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.animation-rightandleft{
+    animation-name: rightandleft;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animation-leftandright{
+    animation-name:leftandright;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+    
+    @keyframes rightandleft {
+        0%{
+            left:10%;
+        }
+        25%{
+            left:35%;
+        }
+        50%{
+            left:60%;
+        }
+        75%{
+            left:35%;
+        }
+        100%{
+            left:10%;
+        }
+    }
+
+    @keyframes leftandright {
+        0%{
+            left:60%;
+        }
+        25%{
+            left:35%;
+        }
+        50%{
+            left:10%;
+        }
+        75%{
+            left:35%;
+        }
+        100%{
+            left:60%;
+        }
+        
+    }
+/*Fine esercizio 12*/
+
+.animation-lapfromtop{
+    animation-name: lapfromtop;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animation-lapfrombot{
+    animation-name: lapfrombot;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes lapfromtop {
+    0%{
+        left:10%;
+        width: 59px;
+        height: 20px;
+        top: -20px;
+    }
+    12%{
+        left:71%;
+        width: 59px;
+        height: 20px;
+        top: -20px;
+    }
+    18%{
+        left:100%;
+        width: 59px;
+        height: 59px;
+        top: -20px;
+    }
+    27%{
+        left:100%;
+        width: 20px;
+        height: 59px;
+        top: 9px;
+    }
+    36%{
+        left:100%;
+        width: 59px;
+        height: 20px;
+        top: 48px;
+    }
+    49%{
+        left:70%;
+        width: 59px;
+        height: 20px;
+        top: 65px;
+    }
+    55%{
+        left:-1%;
+        width: 59px;
+        height: 20px;
+        top: 65px;
+    }
+    64%{
+        left:-10%;
+        width: 20px;
+        height: 59px;
+        top: 26px;
+    }
+    73%{
+        left:-10%;
+        width: 20px;
+        height: 59px;
+        top: -3px;
+    }
+    82%{
+        left:-10%;
+        width: 20px;
+        height: 59px;
+        top: -20px;
+    }
+    91%{
+        left:-10%;
+        width: 59px;
+        height: 20px;
+        top: -20px;
+    }
+    100%{
+        left:10%;
+        width: 59px;
+        height: 20px;
+        top: -20px;
+    }
+    
+}
+
+@keyframes lapfrombot {
+    0%{
+        right:10%;
+        width: 59px;
+        height: 20px;
+        bottom: -20px;
+    }
+    12%{
+        right:71%;
+        width: 59px;
+        height: 20px;
+        bottom: -20px;
+    }
+    18%{
+        right:100%;
+        width: 20px;
+        height: 59px;
+        bottom: -20px;
+    }
+    27%{
+        right:100%;
+        width: 20px;
+        height: 59px;
+        bottom: 9px;
+    }
+    36%{
+        right:100%;
+        width: 20px;
+        height: 20px;
+        bottom: 48px;
+    }
+    49%{
+        right:70%;
+        width: 59px;
+        height: 20px;
+        bottom: 65px;
+    }
+    55%{
+        right:-1%;
+        width: 59px;
+        height: 20px;
+        bottom: 65px;
+    }
+    64%{
+        right:-10%;
+        width: 20px;
+        height: 59px;
+        bottom: 26px;
+    }
+    73%{
+        right:-10%;
+        width: 20px;
+        height: 59px;
+        bottom: -3px;
+    }
+    82%{
+        right:-10%;
+        width: 20px;
+        height: 59px;
+        bottom: -20px;
+    }
+    91%{
+        right:-10%;
+        width: 59px;
+        height: 20px;
+        bottom: -20px;
+    }
+    100%{
+        right:10%;
+        width: 59px;
+        height: 20px;
+        bottom: -20px;
+    }
+    
+}
+
+/*Fine esercizio 13*/
